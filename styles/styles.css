@@ -273,7 +273,7 @@ a[class*="__button"] {
   /* width: 100%; */
 }
 .slider-pagination {
-  padding-right: 335px;
+  transform: translateX(-170px);
 }
 .slider-pagination .swiper-pagination-bullet {
   background: #d1d1d1;
@@ -470,6 +470,9 @@ a[class*="__button"] {
 .slider-about-button-prev {
   left: -59px;
 }
+.slider-about-button-next {
+  right: -59px;
+}
 .slider-about-button-prev svg path,
 .slider-about-button-next svg path {
   transition: all 0.5s ease;
@@ -477,9 +480,6 @@ a[class*="__button"] {
 .slider-about-button-prev:hover svg path,
 .slider-about-button-next:hover svg path {
   stroke: #000;
-}
-.slider-about-button-next {
-  right: -59px;
 }
 
 /* =================================================== */
