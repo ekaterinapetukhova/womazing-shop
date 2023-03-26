@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,29 +8,34 @@
       href="https://fonts.googleapis.com/css?family=Raleway:300,regular,500,700,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="fontawesome/all.min.css" />
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/styles.css" />
-    <title>Womazing</title>
+    <title>Магазин</title>
   </head>
   <body>
     <div class="wrapper">
       <!-- HEADER -->
       <header class="header">
         <div class="header__container">
-          <a class="header__logo _logo" href="#">Womazing</a>
+          <a class="header__logo _logo" href="index.html">Womazing</a>
           <nav class="header__menu menu">
             <ul class="menu__list">
               <li class="menu__item">
-                <a class="menu__link" href="#">Главная</a>
+                <a class="menu__link" href="index.html">Главная</a>
               </li>
               <li class="menu__item">
                 <a class="menu__link" href="#">Магазин</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="#">О бренде</a>
+                <a class="menu__link" href="about-brand.html">О бренде</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="#">Контакты</a>
+                <a class="menu__link" href="contacts.html">Контакты</a>
               </li>
             </ul>
           </nav>
@@ -70,7 +75,7 @@
             </svg>
             +7 (495) 823-54-12</a
           >
-          <a class="header__basket" href="#">
+          <a class="header__basket" href="cart.html">
             <img
               class="header__basket-img"
               src="images/header/basket.svg"
@@ -80,9 +85,236 @@
           </a>
         </div>
       </header>
-      +
       <!-- PAGE -->
-      <main class="page"></main>
+      <main class="page">
+        <!-- SHOP -->
+        <section class="page__shop shop">
+          <div class="shop__container">
+            <h1 class="shop__title">Магазин</h1>
+            <div class="shop__breadcrumb breadcrumb">
+              <ul class="breadcrumb__items">
+                <li class="breadcrumb__item">
+                  <a class="breadcrumb__link" href="index.html">Главная</a>
+                </li>
+                <li class="breadcrumb__item">
+                  <a class="breadcrumb__link active" href="#">Магазин</a>
+                </li>
+              </ul>
+            </div>
+            <div class="shop__catalog catalog">
+              <div class="catalog__radio-inputs">
+                <input
+                  class="catalog__radio-input"
+                  type="radio"
+                  id="all"
+                  name="radio-button"
+                  value="Все"
+                />
+                <label class="catalog__radio-label active" for="all">Все</label>
+                <input
+                  class="catalog__radio-input"
+                  type="radio"
+                  id="coat"
+                  name="radio-button"
+                  value="Пальто"
+                />
+                <label class="catalog__radio-label" for="coat">Пальто</label>
+                <input
+                  class="catalog__radio-input"
+                  type="radio"
+                  id="sweatshirts"
+                  name="radio-button"
+                  value="Свитшоты"
+                />
+                <label class="catalog__radio-label" for="sweatshirts"
+                  >Свитшоты</label
+                >
+                <input
+                  class="catalog__radio-input"
+                  type="radio"
+                  id="cardigans"
+                  name="radio-button"
+                  value="Кардиганы"
+                />
+                <label class="catalog__radio-label" for="cardigans"
+                  >Кардиганы</label
+                >
+                <input
+                  class="catalog__radio-input"
+                  type="radio"
+                  id="hoodies"
+                  name="radio-button"
+                  value="Толстовки"
+                />
+                <label class="catalog__radio-label" for="hoodies"
+                  >Толстовки</label
+                >
+              </div>
+              <p class="catalog__products-number">
+                Показано: <span>9</span> из 12 товаров
+              </p>
+              <div class="catalog__body">
+                <ul class="catalog__items">
+                  <li class="catalog__item item-catalog">
+                    <a class="item-catalog__link" href="#">
+                      <div class="item-catalog__img-wrapper">
+                        <img
+                          class="item-catalog__img"
+                          src="images/shop/item-1.jpg"
+                          alt="Первый товар"
+                        />
+                        <div class="item-catalog__overlay"></div>
+                      </div>
+                      <p class="item-catalog__title">Футболка USA</p>
+                      <p class="item-catalog__price">
+                        <span>$229</span>$129
+                      </p></a
+                    >
+                  </li>
+                  <li class="catalog__item item-catalog">
+                    <a class="item-catalog__link" href="#">
+                      <div class="item-catalog__img-wrapper">
+                        <img
+                          class="item-catalog__img"
+                          src="images/shop/item-2.jpg"
+                          alt="Второй товар"
+                        />
+                        <div class="item-catalog__overlay"></div>
+                      </div>
+                      <p class="item-catalog__title">Купальник Glow</p>
+                      <p class="item-catalog__price">$129</p></a
+                    >
+                  </li>
+                  <li class="catalog__item item-catalog">
+                    <a class="item-catalog__link" href="#">
+                      <div class="item-catalog__img-wrapper">
+                        <img
+                          class="item-catalog__img"
+                          src="images/shop/item-3.jpg"
+                          alt="Третий товар"
+                        />
+                        <div class="item-catalog__overlay"></div>
+                      </div>
+                      <p class="item-catalog__title">Свитшот Sweet Shot</p>
+                      <p class="item-catalog__price">$129</p></a
+                    >
+                  </li>
+                  <li class="catalog__item item-catalog">
+                    <a class="item-catalog__link" href="#">
+                      <div class="item-catalog__img-wrapper">
+                        <img
+                          class="item-catalog__img"
+                          src="images/shop/item-1.jpg"
+                          alt="Первый товар"
+                        />
+                        <div class="item-catalog__overlay"></div>
+                      </div>
+                      <p class="item-catalog__title">Футболка USA</p>
+                      <p class="item-catalog__price">
+                        <span>$229</span>$129
+                      </p></a
+                    >
+                  </li>
+                  <li class="catalog__item item-catalog">
+                    <a class="item-catalog__link" href="#">
+                      <div class="item-catalog__img-wrapper">
+                        <img
+                          class="item-catalog__img"
+                          src="images/shop/item-2.jpg"
+                          alt="Второй товар"
+                        />
+                        <div class="item-catalog__overlay"></div>
+                      </div>
+                      <p class="item-catalog__title">Купальник Glow</p>
+                      <p class="item-catalog__price">$129</p></a
+                    >
+                  </li>
+                  <li class="catalog__item item-catalog">
+                    <a class="item-catalog__link" href="#">
+                      <div class="item-catalog__img-wrapper">
+                        <img
+                          class="item-catalog__img"
+                          src="images/shop/item-3.jpg"
+                          alt="Третий товар"
+                        />
+                        <div class="item-catalog__overlay"></div>
+                      </div>
+                      <p class="item-catalog__title">Свитшот Sweet Shot</p>
+                      <p class="item-catalog__price">$129</p></a
+                    >
+                  </li>
+                  <li class="catalog__item item-catalog">
+                    <a class="item-catalog__link" href="#">
+                      <div class="item-catalog__img-wrapper">
+                        <img
+                          class="item-catalog__img"
+                          src="images/shop/item-1.jpg"
+                          alt="Первый товар"
+                        />
+                        <div class="item-catalog__overlay"></div>
+                      </div>
+                      <p class="item-catalog__title">Футболка USA</p>
+                      <p class="item-catalog__price">
+                        <span>$229</span>$129
+                      </p></a
+                    >
+                  </li>
+                  <li class="catalog__item item-catalog">
+                    <a class="item-catalog__link" href="#">
+                      <div class="item-catalog__img-wrapper">
+                        <img
+                          class="item-catalog__img"
+                          src="images/shop/item-2.jpg"
+                          alt="Второй товар"
+                        />
+                        <div class="item-catalog__overlay"></div>
+                      </div>
+                      <p class="item-catalog__title">Купальник Glow</p>
+                      <p class="item-catalog__price">$129</p></a
+                    >
+                  </li>
+                  <li class="catalog__item item-catalog">
+                    <a class="item-catalog__link" href="#">
+                      <div class="item-catalog__img-wrapper">
+                        <img
+                          class="item-catalog__img"
+                          src="images/shop/item-3.jpg"
+                          alt="Третий товар"
+                        />
+                        <div class="item-catalog__overlay"></div>
+                      </div>
+                      <p class="item-catalog__title">Свитшот Sweet Shot</p>
+                      <p class="item-catalog__price">$129</p></a
+                    >
+                  </li>
+                </ul>
+                <p class="catalog__products-number">
+                  Показано: <span>9</span> из 12 товаров
+                </p>
+                <nav class="catalog__navigation navigation">
+                  <ul class="navigation__items">
+                    <li class="navigation__item active">
+                      <a class="navigation__link" href="">1</a>
+                    </li>
+                    <li class="navigation__item">
+                      <a class="navigation__link" href="">2</a>
+                    </li>
+                    <li class="navigation__item">
+                      <a class="navigation__link-next" href="">
+                        <img
+                          class="navigation__next-img"
+                          src="images/shop/arrow-next.svg"
+                          alt="Следующая страница"
+                        />
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
       <!-- FOOTER -->
       <footer class="footer">
         <div class="footer__container">
@@ -160,6 +392,8 @@
         </div>
       </footer>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="scripts/scripts.js"></script>
   </body>
 </html>

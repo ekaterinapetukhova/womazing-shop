@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,6 +8,11 @@
       href="https://fonts.googleapis.com/css?family=Raleway:300,regular,500,700,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="fontawesome/all.min.css" />
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/styles.css" />
     <title>Womazing</title>
@@ -17,20 +22,20 @@
       <!-- HEADER -->
       <header class="header">
         <div class="header__container">
-          <a class="header__logo _logo" href="#">Womazing</a>
+          <a class="header__logo _logo" href="index.html">Womazing</a>
           <nav class="header__menu menu">
             <ul class="menu__list">
               <li class="menu__item">
-                <a class="menu__link" href="#">Главная</a>
+                <a class="menu__link" href="index.html">Главная</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="#">Магазин</a>
+                <a class="menu__link" href="shop.html">Магазин</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="#">О бренде</a>
+                <a class="menu__link" href="about-brand.html">О бренде</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="#">Контакты</a>
+                <a class="menu__link" href="contacts.html">Контакты</a>
               </li>
             </ul>
           </nav>
@@ -70,7 +75,7 @@
             </svg>
             +7 (495) 823-54-12</a
           >
-          <a class="header__basket" href="#">
+          <a class="header__basket" href="cart.html">
             <img
               class="header__basket-img"
               src="images/header/basket.svg"
@@ -80,9 +85,41 @@
           </a>
         </div>
       </header>
-      +
       <!-- PAGE -->
-      <main class="page"></main>
+      <main class="page">
+        <!-- SUCCESS -->
+        <section class="page__success success">
+          <div class="success__container">
+            <h1 class="success__title">Заказ получен</h1>
+            <div class="success__breadcrumb breadcrumb">
+              <ul class="breadcrumb__items">
+                <li class="breadcrumb__item">
+                  <a class="breadcrumb__link" href="index.html">Главная</a>
+                </li>
+                <li class="breadcrumb__item">
+                  <a class="breadcrumb__link" href="checkout.html"
+                    >Офорлмение заказа</a
+                  >
+                </li>
+                <li class="breadcrumb__item">
+                  <a class="breadcrumb__link active" href="#">Заказ получен</a>
+                </li>
+              </ul>
+            </div>
+            <div class="success__item item-success">
+              <div class="item-success__body">
+                <h3 class="item-success__title">Заказ успешно оформлен</h3>
+                <p class="item-success__text">
+                  Мы свяжемся с вами в ближайшее время!
+                </p>
+              </div>
+              <a class="item-success__button" href="index.html"
+                >Перейти на главную</a
+              >
+            </div>
+          </div>
+        </section>
+      </main>
       <!-- FOOTER -->
       <footer class="footer">
         <div class="footer__container">
@@ -160,6 +197,7 @@
         </div>
       </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="scripts/scripts.js"></script>
   </body>
 </html>

@@ -1,5 +1,4 @@
 // ИЗМЕНЕНИЕ ФОНА ФИКСИРОВАННОГО HEADER
-
 window.addEventListener('scroll', function() {
   if (scrollY > 50) {
     document.querySelector('.header').classList.add('fixed')
@@ -8,8 +7,14 @@ window.addEventListener('scroll', function() {
   }
 })
 
-// HOME SLIDER
+// /АКТИВНАЯ ССЫЛКА HEADER
+(function() {
+  [...this.querySelectorAll(".menu__link")]
+    .filter(a => this.URL.startsWith(a.href))
+    .forEach(a => a.classList.add("active"));
+}.bind(window.document)());
 
+// HOME SLIDER
 const sliderBody = new Swiper(".slider__body", {
   loop: true,
   autoplay: true,
@@ -36,7 +41,6 @@ sliderBody.controller.control = sliderImages;
 sliderImages.controller.control = sliderBody;
 
 // ABOUT SLIDER
-
 const aboutSlider = new Swiper(".slider-about", {
   loop: true,
   pagination: {

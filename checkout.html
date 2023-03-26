@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,29 +8,34 @@
       href="https://fonts.googleapis.com/css?family=Raleway:300,regular,500,700,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="fontawesome/all.min.css" />
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/styles.css" />
-    <title>Womazing</title>
+    <title>Оформление заказа</title>
   </head>
   <body>
     <div class="wrapper">
       <!-- HEADER -->
       <header class="header">
         <div class="header__container">
-          <a class="header__logo _logo" href="#">Womazing</a>
+          <a class="header__logo _logo" href="index.html">Womazing</a>
           <nav class="header__menu menu">
             <ul class="menu__list">
               <li class="menu__item">
-                <a class="menu__link" href="#">Главная</a>
+                <a class="menu__link" href="index.html">Главная</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="#">Магазин</a>
+                <a class="menu__link" href="shop.html">Магазин</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="#">О бренде</a>
+                <a class="menu__link" href="about-brand.html">О бренде</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="#">Контакты</a>
+                <a class="menu__link" href="contacts.html">Контакты</a>
               </li>
             </ul>
           </nav>
@@ -70,7 +75,7 @@
             </svg>
             +7 (495) 823-54-12</a
           >
-          <a class="header__basket" href="#">
+          <a class="header__basket" href="cart.html">
             <img
               class="header__basket-img"
               src="images/header/basket.svg"
@@ -80,9 +85,119 @@
           </a>
         </div>
       </header>
-      +
       <!-- PAGE -->
-      <main class="page"></main>
+      <main class="page">
+        <!-- CHECKOUT -->
+        <section class="page__checkout checkout">
+          <div class="checkout__container">
+            <h1 class="checkout__title">Оформление заказа</h1>
+            <div class="checkout__breadcrumb breadcrumb">
+              <ul class="breadcrumb__items">
+                <li class="breadcrumb__item">
+                  <a class="breadcrumb__link" href="index.html">Главная</a>
+                </li>
+                <li class="breadcrumb__item">
+                  <a class="breadcrumb__link active" href="#"
+                    >Офорлмение заказа</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <form class="checkout__form form-checkout" action="" method="post">
+              <div class="form-checkout__left">
+                <fieldset class="form-checkout__body">
+                  <lefend class="form-checkout__title">
+                    Данные покупателя
+                  </lefend>
+                  <input
+                    class="form-checkout__input"
+                    type="text"
+                    placeholder="Имя"
+                  />
+                  <input
+                    class="form-checkout__input"
+                    type="email"
+                    placeholder="E-mail"
+                  />
+                  <input
+                    class="form-checkout__input"
+                    type="tel"
+                    placeholder="Телефон"
+                  />
+                </fieldset>
+                <fieldset class="form-checkout__body">
+                  <legend class="form-checkout__title">Адрес получателя</legend>
+                  <input
+                    class="form-checkout__input"
+                    type="text"
+                    placeholder="Страна"
+                  />
+                  <input
+                    class="form-checkout__input"
+                    type="text"
+                    placeholder="Город"
+                  />
+                  <input
+                    class="form-checkout__input"
+                    type="text"
+                    placeholder="Улица"
+                  />
+                  <input
+                    class="form-checkout__input"
+                    type="text"
+                    placeholder="Дом"
+                  />
+                  <input
+                    class="form-checkout__input"
+                    type="text"
+                    placeholder="Квартира"
+                  />
+                </fieldset>
+                <fieldset class="form-checkout__body">
+                  <legend class="form-checkout__title">Комментарии</legend>
+                  <textarea
+                    class="form-checkout__textarea"
+                    placeholder="Комментарии"
+                  ></textarea>
+                </fieldset>
+              </div>
+              <div class="form-checkout__right">
+                <h3 class="form-checkout__title">Ваш заказ</h3>
+                <div class="form-checkout__sum">
+                  <ul class="form-checkout__sum-items">
+                    <li>Товар</li>
+                    <li>Футболка USA</li>
+                    <li>Подытог</li>
+                    <li>Итого</li>
+                  </ul>
+                  <ul class="form-checkout__sum-items">
+                    <li>Всего</li>
+                    <li>$129</li>
+                    <li>$129</li>
+                    <li>$129</li>
+                  </ul>
+                  <div class="form-checkout__last-bg"></div>
+                </div>
+                <h3 class="form-checkout__title">Способы оплаты</h3>
+                <input
+                  class="form-checkout__pay-input"
+                  type="radio"
+                  id="cash"
+                  name="pay-method"
+                  value="Оплата наличными"
+                  
+                />
+                <label class="form-checkout__pay-method" for="cash"
+                  >Оплата наличными</label
+                >
+                <button class="form-checkout__button" type="submit">
+                  Разместить заказ
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
       <!-- FOOTER -->
       <footer class="footer">
         <div class="footer__container">
@@ -160,6 +275,8 @@
         </div>
       </footer>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="scripts/scripts.js"></script>
   </body>
 </html>

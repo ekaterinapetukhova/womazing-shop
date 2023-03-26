@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,29 +8,34 @@
       href="https://fonts.googleapis.com/css?family=Raleway:300,regular,500,700,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="fontawesome/all.min.css" />
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/styles.css" />
-    <title>Womazing</title>
+    <title>Корзина</title>
   </head>
   <body>
     <div class="wrapper">
       <!-- HEADER -->
       <header class="header">
         <div class="header__container">
-          <a class="header__logo _logo" href="#">Womazing</a>
+          <a class="header__logo _logo" href="index.html">Womazing</a>
           <nav class="header__menu menu">
             <ul class="menu__list">
               <li class="menu__item">
-                <a class="menu__link" href="#">Главная</a>
+                <a class="menu__link" href="index.html">Главная</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="#">Магазин</a>
+                <a class="menu__link" href="shop.html">Магазин</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="#">О бренде</a>
+                <a class="menu__link" href="about-brand.html">О бренде</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="#">Контакты</a>
+                <a class="menu__link" href="contacts.html">Контакты</a>
               </li>
             </ul>
           </nav>
@@ -80,9 +85,72 @@
           </a>
         </div>
       </header>
-      +
       <!-- PAGE -->
-      <main class="page"></main>
+      <main class="page">
+        <!-- CART -->
+        <section class="page__cart cart">
+          <div class="cart__container">
+            <h1 class="cart__title">Корзина</h1>
+            <div class="cart__breadcrumb breadcrumb">
+              <ul class="breadcrumb__items">
+                <li class="breadcrumb__item">
+                  <a class="breadcrumb__link" href="index.html">Главная</a>
+                </li>
+                <li class="breadcrumb__item">
+                  <a class="breadcrumb__link active" href="#">Корзина</a>
+                </li>
+              </ul>
+            </div>
+            <div class="cart__list">
+              <ul class="cart__header">
+                <li>Товар</li>
+                <li>Цена</li>
+                <li>Количество</li>
+                <li>Всего</li>
+              </ul>
+              <ul class="cart__item">
+                <li>
+                  <a class="cart__item-link" href="">
+                    <span></span>
+                    <img
+                      src="images/cart/table-item-1.jpg"
+                      alt="Изображение товара"
+                    />
+                    <p>Футболка USA</p></a
+                  >
+                </li>
+                <li>$129</li>
+                <li>
+                  <input type="number" min="1" max="20" placeholder="1" />
+                </li>
+                <li>$129</li>
+              </ul>
+            </div>
+            <div class="cart__update">
+              <div class="cart__coupon coupon">
+                <input
+                  class="coupon__input"
+                  type="text"
+                  placeholder="Введите купон"
+                />
+                <button class="coupon__button" type="submit">
+                  Применить купон
+                </button>
+              </div>
+              <button class="cart__update-button" type="submit">
+                Обновить корзину
+              </button>
+            </div>
+            <div class="cart__result">
+              <p class="cart__result-subtotal">Подытог: <span>$129</span></p>
+              <div class="cart__total">
+                <p class="cart__total-text">Итого: <span>$129</span></p>
+                <a class="cart__total-button" href="">Оформить заказ</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
       <!-- FOOTER -->
       <footer class="footer">
         <div class="footer__container">
@@ -160,6 +228,7 @@
         </div>
       </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="scripts/scripts.js"></script>
   </body>
 </html>
